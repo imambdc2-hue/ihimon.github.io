@@ -472,24 +472,14 @@ nav ul{
 .service-card p, .work-card p {
   color: #444444;
 }
-.reach-map {
+.service-card p, .work-card p {
+  color: #444444;
+}
+
+.community-reach {
   text-align: center;
-  padding: 70px 20px;
-  background: #0b1a3a;
-  color: #fff;
-}
-.reach-subtitle {
-  color: #cfd6e6;
-  margin-bottom: 30px;
-}
-.map-wrapper {
-  position: relative;
-  max-width: 350px;
-  margin: 0 auto;
-}
-.bd-map {
-  width: 100%;
-  height: auto;
+  ...
+
 }
 
 /* City dots */
