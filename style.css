@@ -540,3 +540,82 @@ nav ul{
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
+.community-reach {
+  text-align: center;
+  padding: 70px 20px;
+  background: #0b1a3a;
+  color: #fff;
+}
+.community-reach-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Stats side */
+.stats-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.stat-box h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffd166;
+}
+.stat-box p {
+  color: #cfd6e6;
+  margin-top: 4px;
+}
+
+/* Map side */
+.map-wrapper {
+  position: relative;
+  max-width: 280px;
+  width: 100%;
+}
+.bd-map { width: 100%; height: auto; }
+
+.city-dot { fill: #cfd6e6; }
+.city-dot.dhaka { fill: #ffd166; }
+
+.reach-line {
+  fill: none;
+  stroke: #ffd166;
+  stroke-width: 2;
+  stroke-dasharray: 8 6;
+  stroke-linecap: round;
+  animation: dash-flow 2.5s linear infinite;
+  opacity: 0.8;
+}
+@keyframes dash-flow {
+  to { stroke-dashoffset: -100; }
+}
+
+.pulse-ring {
+  fill: none;
+  stroke: #ffd166;
+  stroke-width: 2;
+  transform-origin: 200px 230px;
+  animation: pulse-out 2s ease-out infinite;
+}
+@keyframes pulse-out {
+  0%   { r: 6;  opacity: 1; }
+  100% { r: 40; opacity: 0; }
+}
+
+.map-labels {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.map-labels span {
+  position: absolute;
+  font-size: 0.7rem;
+  color: #cfd6e6;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
