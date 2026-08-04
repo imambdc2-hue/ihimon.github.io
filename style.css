@@ -353,3 +353,43 @@ nav ul{
         transform:translateY(0);
     }
 }
+.featured {
+  background: #0b1a3a;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.featured-label {
+  letter-spacing: 3px;
+  color: #cfd6e6;
+  margin-bottom: 30px;
+  font-size: 0.85rem;
+}
+.logo-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.logo-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll-left 18s linear infinite;
+}
+.logo-pill {
+  background: #ffffff;
+  color: #0b1a3a;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.featured-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #cfd6e6;
+}
