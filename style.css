@@ -244,7 +244,14 @@ nav a:hover{
     border-color:#fff;
     transform:translateY(-6px);
 }
+.goal-card{
+    transition:.4s;
+}
 
+.goal-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(255,255,255,.15);
+}
 /* SOCIAL */
 
 .social-grid{
