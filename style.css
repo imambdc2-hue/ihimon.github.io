@@ -565,3 +565,25 @@ nav ul{
   margin-top: 4px;
 }
 
+.chat-button{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    font-size:30px;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 0 20px rgba(37,211,102,.5);
+    z-index:9999;
+    transition:.3s;
+}
+
+.chat-button:hover{
+    transform:scale(1.1);
+}
